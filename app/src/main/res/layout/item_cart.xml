@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_weight="10"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:background="@drawable/item_background"
+    app:layout_constraintCircleRadius="20dp"
+    android:orientation="horizontal"
+    android:layout_height="100dp">
+    <LinearLayout
+        android:layout_weight="3"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+        <ImageView
+            android:src="@drawable/ic_launcher_background"
+            android:adjustViewBounds="true"
+            android:id="@+id/imgCart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </ImageView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:weightSum="3"
+        android:orientation="vertical"
+        android:layout_weight="4"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/txtvName"
+            android:text="Đèn ngủ trang trí nhiều mẫu"
+            android:layout_weight="2"
+            android:maxLines="3"
+            android:ellipsize="end"
+            android:fontFamily="@font/montserrat_bold"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"></TextView>
+
+        <TextView
+            android:id="@+id/txtvPrice"
+            android:text="49000 VND"
+            android:layout_weight="1"
+            android:fontFamily="@font/montserrat"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"></TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:weightSum="3"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:background="#c4c4c4"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:id="@+id/btnInc"
+            android:background="#333333"
+            android:src="@drawable/ic_baseline_add_24"
+            android:layout_weight="1"
+            android:layout_margin="7dp"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"></ImageButton>
+
+        <TextView
+            android:textAlignment="center"
+            android:id="@+id/txtvNumberPr"
+            android:text="3"
+            android:layout_weight="1"
+            android:fontFamily="@font/montserrat_bold"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"></TextView>
+        <ImageButton
+            android:id="@+id/btnDec"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_margin="7dp"
+            android:background="#333333"
+            android:src="@drawable/ic_baseline_remove_24"
+            android:layout_height="0dp"></ImageButton>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtvTotalOfEachPr"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="5dp"
+        android:layout_weight="2"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="49000"
+        android:textSize="14sp"></TextView>
+
+</LinearLayout>

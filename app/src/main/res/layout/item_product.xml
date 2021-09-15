@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="190dp"
+    android:orientation="vertical"
+    android:id="@+id/cardViewP"
+    app:cardBackgroundColor="#333333"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="10dp"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_height="295dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imgProduct"
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:padding="0dp"
+            android:layout_margin="0dp"
+            android:src="@drawable/a"></ImageView>
+
+        <TextView
+            android:id="@+id/txtvDesc"
+            android:textColor="#f0f0f0"
+            android:text="Image No"
+            android:ellipsize="end"
+            android:fontFamily="@font/montserrat_bold"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="7dp"
+            android:maxLines="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </TextView>
+
+        <LinearLayout
+            android:weightSum="10"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginBottom="7dp">
+            <TextView
+                android:id="@+id/txtvPrice"
+                android:layout_weight="7"
+                android:gravity="center_vertical"
+                android:fontFamily="@font/montserrat"
+                android:text="price $"
+                android:textColor="#f5f6f8"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"></TextView>
+
+            <ImageButton
+                android:id="@+id/btnAdd"
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:src="@drawable/ic_baseline_add_241"
+                android:background="@drawable/button_add">
+            </ImageButton>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
